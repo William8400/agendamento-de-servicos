@@ -51,10 +51,10 @@
     text-decoration: none;
 }
 
-#pagina_incial{
+#pagina_incial,#servicos{
 
 
-    background-image: url(../img/window_cleaning.jpg);
+    background-image: url(../img/window-cleaner-104890_1280.jpg);
     background-size: cover;
     background-blend-mode: lighten;
     background-repeat: no-repeat;
@@ -73,17 +73,17 @@
     place-items: center center;    
 }
 
-#texto{
+#texto,.conteudo{
     border: 1px solid var(--cor_principal);
-    background-color: white;
+    background-color: rgba(255,255, 255, 0.8);
+
+    padding: 10px;
+    border-radius: 20px;
+
+    display: grid;
 }
 
-#servicos{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
-}
+
 .conteudo{
     border: 1px solid var(--cor_principal);
     padding: 10px;
@@ -103,8 +103,12 @@
     height: 50px;
     padding: 10px;
     background-color: cadetblue;
-    color: white;
+    
     border-radius: 20px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
 }
 
 @media(max-width:600px){
