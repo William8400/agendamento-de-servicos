@@ -16,6 +16,9 @@
 
     
 }
+#logo img{
+    width: 100%;
+}
 
 #itens_menu ul{
     list-style: none;
@@ -25,10 +28,35 @@
     padding: 10px;
     flex-wrap: wrap;
 
-    justify-content: center;
+    place-items: center center;
 
 }
 
 #itens_menu li{
     font-size: large;
+}
+
+#pagina_incial{
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    
+    place-items: center center;    
+}
+
+@media(max-width:600px){
+    #cabecalho{
+        grid-template-columns: 1fr;
+    }
+    #itens_menu ul{
+        flex-direction: column;
+
+        
+    }
+
+
+
+
+
 }
